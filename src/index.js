@@ -1,12 +1,13 @@
 var fs = require('fs')
 
 ;(async () => {
+  console.log(__dirname)
   const algorithmInfoList = await getFileInfoListInDir('algorithm')
-  writeDataToTargetFile('README.md', algorithmInfoList, classifiedYear)
+  writeDataToTargetFile(`README.md`, algorithmInfoList, classifiedYear)
 })()
 
 /**
- *
+ * 写入数据到目标文件
  * @param {* string} fileName 文件名
  * @param {* array } data 数据
  * @param {* function } order 组织数据方式
@@ -21,7 +22,7 @@ function writeDataToTargetFile(fileName, data, order) {
     const fileInfoList = fileInfoListByOrder[year]
     const fileInfoContent = fileInfoList.reduce(
       (fileContent, fileInfo) =>
-        `${fileContent}   - [${fileInfo.fullName}](./${fileInfo.dirName}/${fileInfo.fullName})
+        `${fileContent}   - [${fileInfo.fullName}](${__dirname}/${fileInfo.dirName}/${fileInfo.fullName})
 `,
       ''
     )
@@ -58,7 +59,7 @@ function classifiedYear(fileInfoList) {
  */
 function getFileInfoListInDir(dirName) {
   return new Promise((resolve, reject) => {
-    fs.readdir(`./${dirName}`, (err, fileNameList) => {
+    fs.readdir(`${__dirname}/${dirName}`, (err, fileNameList) => {
       const fileInfoList = fileNameList.map((fileName) => {
         try {
           const date = fileName.match(/.+\.[0-9]+/)[0]
