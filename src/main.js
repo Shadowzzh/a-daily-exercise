@@ -22,7 +22,6 @@ function writeDataToTargetFile(fileName, data, order) {
     const fileInfoContent = fileInfoList.reduce(
       (fileContent, fileInfo) =>
         `${fileContent}   - [${fileInfo.fullName}](./${fileInfo.dirName}/${fileInfo.fullName})
-</br>
 `,
       ''
     )
