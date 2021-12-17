@@ -1,7 +1,6 @@
 var fs = require('fs')
 
 ;(async () => {
-  console.log(__dirname)
   const algorithmInfoList = await getFileInfoListInDir('algorithm')
   writeDataToTargetFile(`README.md`, algorithmInfoList, classifiedYear)
 })()
@@ -22,7 +21,7 @@ function writeDataToTargetFile(fileName, data, order) {
     const fileInfoList = fileInfoListByOrder[year]
     const fileInfoContent = fileInfoList.reduce(
       (fileContent, fileInfo) =>
-        `${fileContent}   - [${fileInfo.fullName}](${__dirname}/${fileInfo.dirName}/${fileInfo.fullName})
+        `${fileContent}   - [${fileInfo.fullName}](${process.cwd()}/${fileInfo.dirName}/${fileInfo.fullName})
 `,
       ''
     )
@@ -59,7 +58,8 @@ function classifiedYear(fileInfoList) {
  */
 function getFileInfoListInDir(dirName) {
   return new Promise((resolve, reject) => {
-    fs.readdir(`${__dirname}/${dirName}`, (err, fileNameList) => {
+    console.log(`${process.cwd()}/${dirName}`)
+    fs.readdir(`${process.cwd()}/${dirName}`, (err, fileNameList) => {
       const fileInfoList = fileNameList.map((fileName) => {
         try {
           const date = fileName.match(/.+\.[0-9]+/)[0]
