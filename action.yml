@@ -1,0 +1,12 @@
+
+name: automatic-generation-md
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      runs:
+        using: 'node14'
+        main: 'src/main.js'
