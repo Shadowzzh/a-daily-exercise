@@ -27,7 +27,10 @@ jobs:
 
       - name: build
         run: node src/index.js
+<<<<<<< HEAD
         run: git add .
+=======
+>>>>>>> fe7d6d8d0f8adfb71ab4b3da92d9ef9dbe1914e6
         run: git commit -m 'feat:build'
         run: git push
 
