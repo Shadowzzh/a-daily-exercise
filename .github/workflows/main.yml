@@ -30,6 +30,7 @@ jobs:
 
       - name: commit
         run: git add .
+      - name: commit2
         run: git commit -m 'feat:build'
 
       # Runs a single command using the runners shell
