@@ -3,6 +3,8 @@ var fs = require('fs')
 ;(async () => {
   const algorithmInfoList = await getFileInfoListInDir('algorithm')
   writeDataToTargetFile(`README.md`, algorithmInfoList, classifiedYear)
+
+  console.log(fs.readdirSync(`${process.cwd()}`))
 })()
 
 /**
@@ -33,7 +35,7 @@ ${fileInfoContent}
 `
   }
 
-  fs.writeFile(fileName, content, () => {})
+  fs.writeFileSync(fileName, content, () => {})
 }
 
 /**
@@ -58,7 +60,6 @@ function classifiedYear(fileInfoList) {
  */
 function getFileInfoListInDir(dirName) {
   return new Promise((resolve, reject) => {
-    console.log(`${process.cwd()}/${dirName}`)
     fs.readdir(`${process.cwd()}/${dirName}`, (err, fileNameList) => {
       const fileInfoList = fileNameList.map((fileName) => {
         try {
