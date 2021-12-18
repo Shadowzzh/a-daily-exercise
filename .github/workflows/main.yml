@@ -30,10 +30,10 @@ jobs:
 
       - name: commit
         run: |
-        git config --global user.email "1746556951@qq.com"
-        git config --global user.name "zzh"
-        git add .
-        git commit -m 'feat:build'
+          git config --global user.email 1746556951@qq.com
+          git config --global user.name zzh
+          git add .
+          git commit -m 'feat:build'
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
