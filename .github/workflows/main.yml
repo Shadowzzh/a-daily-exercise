@@ -29,9 +29,11 @@ jobs:
         run: node src/index.js
 
       - name: commit
-        run: git add .
-      - name: commit2
-        run: git commit -m 'feat:build'
+        run: |
+        git config --global user.email "1746556951@qq.com"
+        git config --global user.name "zzh"
+        git add .
+        git commit -m 'feat:build'
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
