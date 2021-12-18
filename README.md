@@ -1,15 +1,8 @@
 # 每日一题
 
 - ## **2021**
-<<<<<<< HEAD
-   - [2021.12.15-53_最大子数组和-[简单].md](/home/zzh/文档/learn/a-daily-exercise/algorithm/2021.12.15-53_最大子数组和-[简单].md)
-   - [2021.12.16-1_两数之和-[简单].md](/home/zzh/文档/learn/a-daily-exercise/algorithm/2021.12.16-1_两数之和-[简单].md)
-   - [2021.12.17-88_合并两个有序数组-[简单].md](/home/zzh/文档/learn/a-daily-exercise/algorithm/2021.12.17-88_合并两个有序数组-[简单].md)
-   - [2021.12.18-350_两个数组的交集II-[简单].md](/home/zzh/文档/learn/a-daily-exercise/algorithm/2021.12.18-350_两个数组的交集II-[简单].md)
-=======
    - [2021.12.15-53_最大子数组和-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.15-53_最大子数组和-[简单].md)
    - [2021.12.16-1_两数之和-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.16-1_两数之和-[简单].md)
    - [2021.12.17-88_合并两个有序数组-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.17-88_合并两个有序数组-[简单].md)
-   - [2021.12.18-350_两个数组的交集 II-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.18-350_两个数组的交集 II-[简单].md)
->>>>>>> bc1e435ac4f765a50ac2e84fc6dff1da1361740c
+   - [2021.12.18-350_两个数组的交集II-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.18-350_两个数组的交集II-[简单].md)
 
