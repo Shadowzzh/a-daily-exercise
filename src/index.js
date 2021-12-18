@@ -4,7 +4,7 @@ var fs = require('fs')
   const algorithmInfoList = await getFileInfoListInDir('algorithm')
   writeDataToTargetFile(`README.md`, algorithmInfoList, classifiedYear)
 
-  console.log(fs.readdirSync(`${process.cwd()}`))
+  console.log(fs.readdirSync(`${process.cwd()}`),1)
 })()
 
 /**
