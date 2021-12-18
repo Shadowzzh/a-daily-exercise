@@ -47,7 +47,10 @@ function classifiedYear(fileInfoList) {
 
   fileInfoList.reduce((classified, fileInfo) => {
     const { year } = fileInfo
-    classified[year] ? classified[year].push(fileInfo) : (classified[year] = [])
+
+    classified[year] || (classified[year] = [])
+    classified[year].push(fileInfo)
+
     return classified
   }, classified)
 
