@@ -6,4 +6,5 @@
    - [2021.12.17-88_合并两个有序数组-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.17-88_合并两个有序数组-[简单].md)
    - [2021.12.18-350_两个数组的交集II-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.18-350_两个数组的交集II-[简单].md)
    - [2021.12.19-121_买卖股票的最佳时机-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.19-121_买卖股票的最佳时机-[简单].md)
+   - [2021.12.21-556_重塑矩阵-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.21-556_重塑矩阵-[简单].md)
 
