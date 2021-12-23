@@ -28,7 +28,7 @@ function writeDataToTargetFile(fileName, data, order) {
       ''
     )
 
-    content += `# 每日一题
+    content += `# 多日一题
 
 - ## **${year}**
 ${fileInfoContent}
