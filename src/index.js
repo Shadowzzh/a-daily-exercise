@@ -28,7 +28,7 @@ function writeDataToTargetFile(fileName, data, order) {
       ''
     )
 
-    content += `# 多日一题
+    content += `# 多2021.12.23-36_有效的数独-[简单]日一题
 
 - ## **${year}**
 ${fileInfoContent}
@@ -49,7 +49,7 @@ function classifiedYear(fileInfoList) {
     const { year } = fileInfo
 
     classified[year] || (classified[year] = [])
-    classified[year].push(fileInfo)
+    classified[year].unshift(fileInfo)
 
     return classified
   }, classified)
