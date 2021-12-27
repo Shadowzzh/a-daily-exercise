@@ -1,6 +1,7 @@
 # 多2021.12.23-36_有效的数独-[简单]日一题
 
 - ## **2021**
+   - [2021.12.25-73_矩阵置零-[中等].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.25-73_矩阵置零-[中等].md)
    - [2021.12.23-36_有效的数独-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.23-36_有效的数独-[简单].md)
    - [2021.12.22-118_杨辉三角-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.22-118_杨辉三角-[简单].md)
    - [2021.12.21-556_重塑矩阵-[简单].md](/home/runner/work/a-daily-exercise/a-daily-exercise/algorithm/2021.12.21-556_重塑矩阵-[简单].md)
