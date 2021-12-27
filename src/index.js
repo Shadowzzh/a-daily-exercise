@@ -23,7 +23,7 @@ function writeDataToTargetFile(fileName, data, order) {
     const fileInfoList = fileInfoListByOrder[year]
     const fileInfoContent = fileInfoList.reduce(
       (fileContent, fileInfo) =>
-        `${fileContent}   - [${fileInfo.fullName}](${process.cwd()}/${fileInfo.dirName}/${fileInfo.fullName})
+        `${fileContent}   - [${fileInfo.fullName}](/${fileInfo.dirName}/${fileInfo.fullName})
 `,
       ''
     )
@@ -68,7 +68,6 @@ function getFileInfoListInDir(dirName) {
         try {
           const date = fileName.match(/.+\.[0-9]+/)[0]
           const [year, month, day] = date.split('.')
-
           const fileInfo = {
             dirName,
             date,
