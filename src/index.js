@@ -15,7 +15,7 @@ var fs = require('fs')
  */
 function writeDataToTargetFile(fileName, data, order) {
   const fileInfoListByOrder = order(data)
-  let content = ''
+  let content = '# 多日一题'
 
   for (const year in fileInfoListByOrder) {
     if (!Object.hasOwnProperty.call(fileInfoListByOrder, year)) continue
@@ -28,7 +28,7 @@ function writeDataToTargetFile(fileName, data, order) {
       ''
     )
 
-    content += `# 多2021.12.23-36_有效的数独-[简单]日一题
+    content += `
 
 - ## **${year}**
 ${fileInfoContent}
