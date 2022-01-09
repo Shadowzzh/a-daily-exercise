@@ -15,7 +15,7 @@ var fs = require('fs')
  */
 function writeDataToTargetFile(fileName, data, order) {
   const fileInfoListByOrder = order(data)
-  let content = '# 多日一题'
+  let content = ''
 
   for (const year in fileInfoListByOrder) {
     if (!Object.hasOwnProperty.call(fileInfoListByOrder, year)) continue
@@ -28,12 +28,18 @@ function writeDataToTargetFile(fileName, data, order) {
       ''
     )
 
-    content += `
+    content = `
 
 - ## **${year}**
 ${fileInfoContent}
+
+${content}
 `
   }
+
+  content = `# 多日一题
+
+  ${content}`
 
   fs.writeFileSync(fileName, content, () => {})
 }
@@ -53,6 +59,8 @@ function classifiedYear(fileInfoList) {
 
     return classified
   }, classified)
+
+  console.log(classified)
 
   return classified
 }
